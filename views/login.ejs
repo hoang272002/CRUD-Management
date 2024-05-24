@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Login</title>
+    <link rel="stylesheet" href="css/style_login.css">
+</head>
+
+<body>
+    <div class="main">
+        <h1>User Management System</h1>
+        <h3>LOGIN</h3>
+        <form action="/api/users/login" method="post" id="login">
+            <label for="Email">Email:</label>
+            <input type="text" name="email" value="" placeholder="Enter your Email" required>
+
+            <label for="password">Password:</label>
+            <input type="password" name="password" value="" placeholder="Enter your Password" required>
+
+            <div class="wrap">
+                <button type="submit" >Login</button>
+            </div>
+        </form>
+        <p>Not registered? 
+              <a href="#" 
+               style="text-decoration: none;">
+                Create an account
+            </a>
+        </p>
+    </div>
+</body>
+
+</html>
